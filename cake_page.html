@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    
+    <title>HP APP</title>
+</head>
+<body>
+    <div class="options_box">
+        <div class="options_title">
+            <h1>Критерии</h1>
+        </div>
+        <div class="options_inner">
+            <div class="meals">
+                <h3>Блюда</h3>
+                <div class="check_group">
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Пицца
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Суши
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Роллы
+                        <span> </span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="meals">
+                <h3>Время суток</h3>
+                <div class="check_group">
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Завтрак
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Обед
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Ужин
+                        <span> </span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="min_amount">
+                <h3>Минимальная сумма заказа</h3>
+                <div class="range_value">
+                    <span class="price_to">До</span>
+                    <p id="display_range_value_2">200</p>
+                    <span class="money_currency">руб</span>
+                </div>
+                <div class="change_range">
+                    <input type="range" id="min_amount_range_2" name="min_amount_range" min="0" max="1000" step="1" value="300">
+                </div>
+            </div>
+            <div class="ordering_criteria">
+                <h3>Критерии заказа</h3>
+                <div class="check_group">
+                    <label class="check_label">
+                        <input type="checkbox" value="1" name="choose">
+                        Оплата картой онлайн
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="2" name="choose">
+                        Оплата наличными
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="3" name="choose">
+                        Оплата картой курьеру
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="4" name="choose">
+                        Оплата бонусными рублями
+                        <span> </span>
+                    </label>
+    
+                </div>
+    
+            </div>
+            <div class="close_options"></div>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="container">
+            <div class="pop_up_cake_wrapper">
+            
+                <div class="pop_up_cake">
+            
+                    <div class="row_2">
+                        <div class="img">
+                            <img src="./img/cards/wok_img.png" alt="salat">
+                        </div>
+                        <div class="description">
+                            <div class="main">
+                                <h3>Торт детский "Винни пух"</h3>
+                                <p class="pop_up_cake_price" ><span>1900</span> руб <span> кг</span></p>
+                            </div>
+                            <p>Под заказ - от 6 часов  • минимальный заказ - 4 кг</p>
+                        </div>
+                        <p class="row_2_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis vel id debitis illo! Aliquam, eveniet.</p>
+                    </div>
+                    <div class="slider_title">
+                        <h3>Начинки</h3>
+                    </div>
+                    <div class="row_3 pou_up_cake_slider">
+                        <div class="item">
+                            <div class="col">
+                                <div class="item_title">
+                                    <img src="./img/cards/cake_1.png" alt="logo_tiramisu">
+                                    <h2>Тирамису</h2>
+                                </div>
+                                <button class="add_btn">+</button>
+                            </div>
+                            <p class="desc_tiramisu">Подними моё настроение! Вознеси меня вверх! Восхитительный воздушный торт “Тирамису” - настоящий хозяил любого стола.</p>
+                        </div>
+                        <div class="item">
+                            <div class="col">                        
+                                <div class="item_title">
+                                    <img src="./img/cards/cake_2.png" alt="logo_tiramisu">
+                                    <h2>Тирамису</h2>
+                                </div>
+                                <button class="add_btn">+</button>
+                            </div>
+                            <p class="desc_tiramisu">Подними моё настроение! Вознеси меня вверх! Восхитительный воздушный торт “Тирамису” - настоящий хозяил любого стола.</p>
+                        </div>
+                        <div class="item">
+                            <div class="col">
+                                <div class="item_title">
+                                    <img src="./img/cards/cake_1.png" alt="logo_tiramisu">
+                                    <h2>Тирамису</h2>
+                                </div>
+                                <button class="add_btn">+</button>
+                            </div>
+                            <p class="desc_tiramisu">Подними моё настроение! Вознеси меня вверх! Восхитительный воздушный торт “Тирамису” - настоящий хозяил любого стола.</p>
+                        </div>
+                        <div class="item">
+                            <div class="col">
+                                <div class="item_title">
+                                    <img src="./img/cards/cake_2.png" alt="logo_tiramisu">
+                                    <h2>Тирамису</h2>
+                                </div>
+                                <button class="add_btn">+</button>
+                            </div>
+                            <p class="desc_tiramisu">Подними моё настроение! Вознеси меня вверх! Восхитительный воздушный торт “Тирамису” - настоящий хозяил любого стола.</p>
+                        </div>
+                    </div>
+                    <div class="row_1">
+                        <div class="option_box">
+                            <span>Количество ярусов</span>
+                            <div class="counter">
+                                <span class="counter_btn">-</span>
+                                <input type="text" value="2"/>
+                                <span class="counter_btn">+</span>
+                            </div>
+                        </div>
+                        <div class="option_box">
+                            <span>Количество слоев</span>
+                            <div class="counter">
+                                <span class="counter_btn">-</span>
+                                <input type="text" value="2"/>
+                                <span class="counter_btn">+</span>
+                            </div>
+                        </div>
+                        <div class="option_box">
+                            <span>Вес, кг</span>
+                            <div class="counter">
+                                <span class="counter_btn">-</span>
+                                <input type="text" value="2"/>
+                                <span class="counter_btn">+</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row_4">
+                        <div class="row_4_left">
+                                <textarea placeholder="Пожелания" name="pup_up_cake_message" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="row_4_right">
+                            <p class="add_photo" >Прикрепить фото</p>
+                            <div class="remove_photo">
+                                <p class="photo_name">mojtort.jpg</p>
+                                <button></button>
+                            </div>
+                            <div class="remove_photo">
+                                <p class="photo_name">mojtort22.jpg</p>
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_5">
+                        <p>Оплата после подтверждения заказа | Мы обязательно перезвоним для уточнения подробностей</p>
+                    </div>
+                    <div class="row_6">
+                        <span class="price">1232 руб</span>
+                        <button>ОТПРАВИТЬ ЗАЯВКУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <nav class="nav_box">
+            <ul class="nav_inner">
+                <li class="footer_item">
+                    <img src="./img/common_icons/categ_icon.svg" alt="">
+                    <p>Категории</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/sales_icon.svg" alt="">
+                    <p>Акции</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/map_icon.svg" alt="">
+                    <p>Адрес</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/cab_icon.svg" alt="">
+                    <p>Кабинет</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/info_icon.svg" alt="">
+                    <p>Инфо</p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script src="./libs/jquery/dist/jquery-ui.min.js"></script>
+<script src="./libs/select2/select2.min.js"></script>
+<script src="./libs/calendar/datepicker/jquery-ui.multidatespicker.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/calendar_init.js"></script>
+<script src="./js/main.js"></script>
+   
+</body>
+</html>

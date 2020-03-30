@@ -1,0 +1,432 @@
+//colors****************************
+
+$orange: #F17E00
+$green: #50CE1B
+$footer_color: #2C4736
+$main_bg: #F5F5F5
+
+html, body
+    height: calc(100vh - 57px - env(safe-area-inset-bottom))
+    background: #ffffff
+
+body
+    padding-top: constant(safe-area-inset-top)
+    padding-top: env(safe-area-inset-top)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Open Sans', sans-serif
+    font-size: 14px
+    &:focus
+        outline: none
+.section
+    width: 100%
+    height: auto
+    padding: 30px 0
+.background
+    overflow-y: auto
+    overflow-x: hidden
+    height: 100%
+    width: 100%
+    padding-top: 70px
+    &.empty
+        padding-top: 10px
+
+.menu_container
+    max-width: 570px
+    margin-right: auto
+
+.container
+    width: 100%
+    max-width: 100%
+    padding: 0 10px
+    margin: 0 auto
+
+.cart_box
+    width: 83px
+    height: 83px
+    z-index: 10
+    position: fixed
+    bottom: 9%
+    right: 10px
+    transition: all 0.3s linear
+    cursor: pointer
+    &:hover
+        animation: rotate .2s ease-in-out
+        & img
+            filter: drop-shadow(0px 0px 10px $orange)
+    & img
+        width: 100%
+        height: auto
+        transition: all 0.3s linear
+    & .cart_num
+        font-weight: 700
+        position: absolute
+        left: 50%
+        top: 53%
+        transform: translate(-50%, -50%)
+        color: $orange
+
+.header_box
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    width: 100%
+    background-color: #ffffff
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)
+    background-image: url(../img/common_icons/arrow_back.svg)
+    background-repeat: no-repeat
+    background-position: center left 10px
+    & h2
+        &.order_numb
+            position: absolute
+            color: rgba(0, 0, 0, 0.4)
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            font-size: 20px
+    & .nav_popup
+        display: none
+        position: fixed
+        height: calc(100vh - 57px - env(safe-area-inset-bottom))
+        z-index: 99
+        top: 75px
+        left: 0
+        right: 0
+        width: 80%
+        background: $orange
+        flex-direction: column
+        color: #ffffff
+        animation: appear_2 .7s cubic-bezier(0, 0.01, 0.21, 1.49)
+        border-radius: 4px
+        & .nav_item
+            width: 100%
+            border-bottom: .5px solid #ffffff
+            & h2
+                margin: 0
+                padding: 10px 15px
+                font-size: 18px
+        &.active
+            display: flex
+    & .burger_box
+        width: 5%
+        & .burger
+            display: block
+            animation: appear .5s cubic-bezier(0, 0.01, 0.21, 1.49)
+            &.active
+                display: none
+        & .burger_cross
+            display: none
+            animation: appear_3 .5s cubic-bezier(0, 0.01, 0.21, 1.49)
+            &.active
+                display: block
+    &.main
+        padding: 0 10px
+        z-index: 100
+        background-image: none
+        display: flex
+        align-items: center
+        & h1
+            width: 95%
+            padding-right: 5%
+            padding-left: 0
+            text-align: center
+        & img
+            width: 100%
+            min-width: 28px
+            max-width: 28px
+            height: auto
+    &.empty
+        background-image: none
+        & h1
+            padding-left: 10px
+    & h1
+        padding: 10px 0
+        padding-left: 30px
+        font-size: 20px
+        color: $orange
+
+//------FOOTER------//
+//------FOOTER------//
+//------FOOTER------//
+.footer
+    position: fixed
+    z-index: 150
+    bottom: 0
+    right: 0
+    left: 0
+    width: 100%
+    background: $orange
+    padding: 5px 10px
+    border-top: 1px solid #fff
+    margin-bottom: constant(safe-area-inset-bottom)
+    margin-bottom: env(safe-area-inset-bottom)
+    & .nav_inner
+        display: flex
+        justify-content: space-around
+        & .footer_item
+            display: flex
+            flex-direction: column
+            align-items: center
+            &:hover
+                & img
+                    filter: opacity(1)
+                & p
+                    opacity: 1
+            & img
+                transition: all .3s linear
+                filter: opacity(.5)
+            & p
+                transition: all .3s linear
+                opacity: .5
+                font-weight: 700
+                margin-top: 5px
+                color: #ffffff
+
+.stars 
+    position: relative
+    display: flex
+    margin: 0
+    top: 5px
+    justify-content: center  
+    .stars_link
+        position: absolute
+        left: 50%
+        bottom: -87%
+        transform: translateX(-68%)
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 300
+        font-size: 12px
+        color: $green
+    .check_label
+        font-size: 14px
+        text-transform: capitalize
+        display: inline-block
+        vertical-align: middle
+        margin: 0 1px
+        position: relative
+        padding-left: 20px
+        margin-bottom: 15px
+        input[type="checkbox"]
+            display: none
+        span 
+            height: 16px
+            width: 17px
+            background-image: url(../img/common_icons/star_empty.svg)
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center
+            display: block
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            &:after
+                content: ''
+                height: 100%
+                width: 100%
+                border-radius: 4px
+                display: block
+                position: absolute
+                left: 0px
+                top: 0px
+                background-repeat: no-repeat
+                background-position: center
+                transition: border 200ms ease-in-out
+        input[type="checkbox"]:checked ~ span:after
+            background-image: url(../img/common_icons/star_full.svg)
+
+.change_range 
+    width: 100%
+    height: 42px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: white
+    margin-bottom: 1px
+    & input
+        appearance: none
+        height: 1px
+        width: 100%
+        background: #50CE1B
+        &:focus
+            outline: none
+        &::-webkit-slider-runnable-track 
+            height: 1px
+            cursor: pointer
+            animate: 0.2s
+        &::-webkit-slider-thumb 
+            border: 1px solid #50CE1B
+            height: 12px
+            width: 12px
+            border-radius: 50%
+            background: #ffffff
+            cursor: pointer
+            -webkit-appearance: none
+            margin-top: -5px
+        &::-moz-range-track 
+            height: 1px
+            cursor: pointer
+            animate: 0.2s
+            background: #50CE1B
+        &::-moz-range-track 
+            height: 1px
+            cursor: pointer
+            animate: 0.2s
+            background: #50CE1B
+        &::-moz-range-thumb 
+            border: 1px solid #50CE1B
+            height: 12px
+            width: 12px
+            border-radius: 50%
+            background: #ffffff
+            cursor: pointer
+            -webkit-appearance: none
+            margin-top: -5px
+
+
+.options_box
+    z-index: 1500
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    background: #ffffff
+    box-shadow:  0px 2px 4px rgba(0, 0, 0, 0.1)
+    transition: all .3s linear
+    & .options_title
+        padding: 15px 0
+        background-image: url(../img/common_icons/settings.svg)
+        background-repeat: no-repeat
+        background-position: center right 10px
+        box-shadow:  0px 2px 4px rgba(0, 0, 0, 0.1)
+    & .options_inner
+        display: none
+        flex-direction: column
+        // animation: appear 1s cubic-bezier(1, 0.1, 0.18, 1.7)
+        &.active
+            display: flex!important
+            height: 75vh
+    & h1
+        margin: 0
+        padding: 10px 15px
+        font-size: 16px
+
+.options_inner
+    & .check_group
+        display: flex
+        flex-direction: column
+        background: white    
+        width: 100%
+        height: 100%
+        max-height: 25vh
+        overflow-y: auto
+    & .dish_subcategory_one
+        & .check_label
+            padding-left: 15px
+            margin-top: 10px
+    & .check_label
+        display: inline-block
+        margin-left: 10px
+        padding-left: 15px
+        margin-bottom: 5px
+        position: relative
+        cursor: pointer
+        input[type="checkbox"]
+            display: none
+        span 
+            height: 14px
+            width: 14px
+            border: 1px solid rgba(0, 0, 0, 0.12)
+            border-radius: 3px
+            display: block
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translate(-50%, -50%)
+            &:after
+                content: ''
+                width: 14px
+                height: 14px
+                display: block
+                position: absolute
+                left: -1px
+                top: -1px
+                transition: 0.2s all ease-in-out
+                background-image: url(../img/common_icons/checked_attr.svg)
+                background-repeat: no-repeat
+                background-position: center
+                opacity: 0
+        input[type="checkbox"]:checked ~ span:after
+            opacity: 1
+    & .ordering_criteria
+        padding: 0 15px
+        & h3
+            color: $orange
+            margin-bottom: 10px
+    & .meals
+        padding: 10px 15px
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.12)
+        margin-bottom: 10px
+        & h3
+            color: $orange
+            margin-bottom: 10px
+    & .min_amount
+        width: 100%
+        padding: 0 15px
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.12)
+        margin-bottom: 15px
+        & h3
+            color: $orange
+        .range_value
+            background: white
+            padding-top: 10px
+            position: relative
+            p
+                color: $orange
+                font-weight: 700
+                margin: 0px 0px 0  24px
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+                position: relative
+                padding-bottom: 5px
+            & .price_to
+                position: absolute
+                top: 9px
+                left: 0
+                color: rgba(black, 0.3)
+            & .money_currency
+                position: absolute
+                left: 10.5%
+                bottom: 6px
+    & .close_options
+        background: $main_bg
+        height: 28px
+        width: 100%
+        margin-top: auto
+        display: flex
+        align-items: center
+        justify-content: center
+        background-image: url(../img/common_icons/arrow_top_orange.svg)
+        background-repeat: no-repeat
+        background-position: center
+.menu_item_btn
+    width: auto
+    padding: 0 20px
+    height: 32px
+    background: $orange
+    outline: none
+    border: none
+    font-size: 14px
+    border-radius: 30px
+    color: white
+    text-transform: uppercase
+    font-weight: bold
+    cursor: pointer
+    transition: 0.4s
+    &:hover
+            box-shadow: 0px 0px 15px $orange

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    
+    <title>HP APP</title>
+</head>
+<body>
+    <div class="header_box main">
+        <div class="burger_box">
+            <img class="burger" src="./img/common_icons/burger.svg" alt="">
+            <img class="burger_cross" src="./img/common_icons/burger_cross.svg" alt="">
+        </div>
+        <h1>Бонусный счёт</h1>
+        <div class="nav_popup">
+            <div class="nav_item">
+                <h2>Мои данные</h2>
+            </div>
+            <div class="nav_item">
+                <h2>История заказов</h2>
+            </div>
+            <div class="nav_item">
+                <h2>Бонусный счёт</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="bonus_box">
+            <div class="referal_programm">
+
+                <div class="referal_bonus">
+                    <p>На вашем счёте</p>
+                    <h2>3492 бонусных баллов</h2>
+                </div>
+
+                <div class="withdrawal_request">
+                    <button class="menu_item_btn">ПОТРАТИТЬ БОНУСЫ</button>
+                    <button class="menu_item_btn green">ЗАРАБОТАТЬ БОНУСЫ</button>
+                </div>
+                
+                <div class="statistics_box">
+
+                    <h1>Сводная статистика</h1>
+                    <div class="statistic_row">
+                        <span>Переходов по вашей ссылке</span>
+                        <span>0</span>
+                    </div>
+
+                    <div class="statistic_row">
+                        <span>Завершенных заказов</span>
+                        <span>48</span>
+                    </div>
+
+                    <div class="statistic_row">
+                        <span>Заработано рублей</span>
+                        <span>3283 руб</span>
+                    </div>
+
+                </div>
+
+                <div class="referal_history">
+                    <div class="title">
+                        <h1>История привлечений</h1>
+                        <button class="toggle_btn" id="referal_toggle"></button>
+                    </div>
+                    <div class="history_box" id="referal_box">
+                        <div class="referal_item">
+                            <p>usermail@domain.com</p>
+                            <span>01-01-2020</span>
+                        </div>
+                        <div class="referal_item">
+                            <p>usermail@domain.com</p>
+                            <span>01-01-2020</span>
+                        </div>
+                        <div class="referal_item">
+                            <p>usermail@domain.com</p>
+                            <span>01-01-2020</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="referal_history">
+                    <div class="title">
+                        <h1>Получено и потрачено</h1>
+                        <button class="toggle_btn" id="referal_revenue_toggle"></button>
+                    </div>
+                    <div class="history_box" id="referal_revenue_box">
+                        <div class="revenue_box">
+                            <div class="referal_item">
+                                <p>usermail@domain.com</p>
+                                <span>01-01-2020</span>
+                            </div>
+                            <p class="revenue_amount">+200</p>
+                        </div>
+                        <div class="revenue_box">
+                            <div class="referal_item">
+                                <p>usermail@domain.com</p>
+                                <span>01-01-2020</span>
+                            </div>
+                            <p class="revenue_amount">+200</p>
+                        </div>
+                        <div class="revenue_box">
+                            <div class="referal_item">
+                                <p>usermail@domain.com</p>
+                                <span>01-01-2020</span>
+                            </div>
+                            <p class="revenue_amount">+200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="referal_types">
+                    <h1>Зарабатывай с нами!</h1>
+                    <div class="type_box">
+                        <div class="type_description">
+                            <h2>По ссылке</h2>
+                            <p>Все очень просто – приводите новых клиентов 
+                                на <a href="#">хочу-поесть.рф</a> и получайте 50% нашей 
+                                прибыли от каждого заказа.Заработать можно 
+                                разными способами, выбирай один или 
+                                воспользуйся всеми.Зарегистрируйся на сайте 
+                                и генерируй свою реферальную ссылку, которую 
+                                можно отправить друзьям, поделиться в соцсетях 
+                                или опубликовать на сайте или в блоге. Ты 
+                                можешь сделать реферальную ссылку на любую 
+                                страницу сайта <a href="#">хочу-поесть.рф</a></p>
+                        </div>
+
+                        <div class="type_share">
+                            <div class="copy_box">
+                                <div class="copy_info">
+                                    <span type="text" class="earn_input">https://xn----jtbzbeohcqv6d.xn--p1ai/promocode/admin</span>
+                                </div>
+                                <button class="copy">
+                                    <img class="copy_white" src="./img/common_icons/copy.svg" alt="">
+                                    <img class="copy_orange" src="./img/common_icons/copy_orange.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="share_socials">
+                                <span href="#">Поделиться с друзьям</span>
+                                <img src="./img/common_icons/vk.svg" alt="">
+                                <img src="./img/common_icons/fb.svg" alt="">
+                                <img src="./img/common_icons/odkl.svg" alt="">
+                                <img src="./img/common_icons/whapp.svg" alt="">
+                                <img src="./img/common_icons/tlg.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <nav class="nav_box">
+            <ul class="nav_inner">
+                <li class="footer_item">
+                    <img src="./img/common_icons/categ_icon.svg" alt="">
+                    <p>Категории</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/sales_icon.svg" alt="">
+                    <p>Акции</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/map_icon.svg" alt="">
+                    <p>Адрес</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/cab_icon.svg" alt="">
+                    <p>Кабинет</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/info_icon.svg" alt="">
+                    <p>Инфо</p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script src="./libs/select2/select2.min.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    
+    <title>HP APP</title>
+</head>
+<body>
+    <div class="options_box">
+        <div class="options_title">
+            <h1>Критерии</h1>
+        </div>
+        <div class="options_inner">
+            <div class="meals">
+                <h3>Блюда</h3>
+                <div class="check_group">
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Пицца
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Суши
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Роллы
+                        <span> </span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="min_amount">
+                <h3>Минимальная сумма заказа</h3>
+                <div class="range_value">
+                    <p id="display_range_value_2">200</p>
+                </div>
+                <div class="change_range">
+                    <input type="range" id="min_amount_range_2" name="min_amount_range" min="0" max="1000" step="1" value="300">
+                </div>
+            </div>
+            <div class="ordering_criteria">
+                <h3>Критерии заказа</h3>
+                <div class="check_group">
+                    <label class="check_label">
+                        <input type="checkbox" value="1" name="choose">
+                        Оплата картой онлайн
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="2" name="choose">
+                        Оплата наличными
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="3" name="choose">
+                        Оплата картой курьеру
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="4" name="choose">
+                        Оплата бонусными рублями
+                        <span> </span>
+                    </label>
+    
+                </div>
+    
+            </div>
+            <div class="close_options"></div>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="container">
+            <div class="create_wok">
+                <div class="foundation">
+                    <h3 class="create_wok_title">Создать свой WOK</h3>
+                    <div class="logo">
+                        <img src="img/cards/wok_img.png" alt="wok_logo">
+                    </div>
+                    <div class="foundation_constructor">
+                        <h3>Основа</h3>
+                        <div class="osnova_buttons">
+                            <button class="osnova_btn menu_item_btn">Рисовая лапша</button>
+                            <button class="osnova_btn menu_item_btn">Рис</button>
+                            <button class="osnova_btn menu_item_btn active">Гречневая лапша</button>
+                            <button class="osnova_btn menu_item_btn">Удрион лапша</button>
+                            <button class="osnova_btn menu_item_btn">Ячневая лапша</button>
+                        </div>
+                        <h3>Начинка</h3>
+                        <div class="nachinka_buttons">
+                            <button class="nachinka_btn menu_item_btn">Мясо</button>
+                            <button class="nachinka_btn menu_item_btn">Овощи и фрукты</button>
+                            <button class="nachinka_btn menu_item_btn active">Грибы</button>
+                            <button class="nachinka_btn menu_item_btn">Соусы</button>
+                            <button class="nachinka_btn menu_item_btn">Рыба</button>
+                        </div>
+                        <div class="inner_pick">
+                            <div class="add_box">
+                                <div class="add_title">
+                                    <h2>Мясо</h2>
+                                </div>
+                                <div class="items_box">
+                                    <div class="add_item">
+                                        <p>Ветчина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Свинина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Пепперони</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Бекон</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Курица</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Охотничьи колбаски</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add_box">
+                                <div class="add_title">
+                                    <h2>Овощи и фрукты</h2>
+                                </div>
+                                <div class="items_box">
+                                    <div class="add_item">
+                                        <p>Ветчина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Свинина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Пепперони</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Бекон</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Курица</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Охотничьи колбаски</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add_box">
+                                <div class="add_title">
+                                    <h2>Грибы</h2>
+                                </div>
+                                <div class="items_box">
+                                    <div class="add_item">
+                                        <p>Ветчина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Свинина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Пепперони</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Бекон</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Курица</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Охотничьи колбаски</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add_box">
+                                <div class="add_title">
+                                    <h2>Соусы</h2>
+                                </div>
+                                <div class="items_box">
+                                    <div class="add_item">
+                                        <p>Ветчина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Свинина</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Пепперони</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Бекон</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Курица</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_item">
+                                        <p>Охотничьи колбаски</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pick_size">
+                            <h3>Размер</h3>
+                            <button class="pick_size_btn active" >25 см</button>
+                            <button class="pick_size_btn" >30 см</button>
+                            <button class="pick_size_btn" >35 см</button>
+                        </div>
+                    </div>
+
+                </div>
+                <h4>Пожелания по Вашим запросам</h4>
+                <div class="slider_wok">
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_1.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_2.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_1.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_2.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_1.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <h4>Готовые блюда</h4>
+                <div class="slider_wok">
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_2.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_1.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_2.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_1.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="item_wok">
+                        <div class="item_img_wok">
+                            <img src="./img/cards/dish_2.png" alt="lanches_slider_1">
+                        </div>
+                        <div class="item_price_wok">
+                            <div class="title">
+                                <h3>WOKI</h3>
+                            </div>
+                            <div class="town">
+                                <p>Tokio</p>
+                            </div>
+                            <div class="wok_price">
+                                <p>300 руб</p>
+                            </div>
+                            <div class="button">
+                                <button class="menu_item_btn">ПОЕСТЬ</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <nav class="nav_box">
+            <ul class="nav_inner">
+                <li class="footer_item">
+                    <img src="./img/common_icons/categ_icon.svg" alt="">
+                    <p>Категории</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/sales_icon.svg" alt="">
+                    <p>Акции</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/map_icon.svg" alt="">
+                    <p>Адрес</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/cab_icon.svg" alt="">
+                    <p>Кабинет</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/info_icon.svg" alt="">
+                    <p>Инфо</p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script src="./libs/jquery/dist/jquery-ui.min.js"></script>
+<script src="./libs/select2/select2.min.js"></script>
+<script src="./libs/calendar/datepicker/jquery-ui.multidatespicker.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/calendar_init.js"></script>
+<script src="./js/main.js"></script>
+   
+</body>
+</html>

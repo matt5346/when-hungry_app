@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    
+    <title>HP APP</title>
+</head>
+<body>
+
+    <div class="background">
+        <div class="main_cart_box">
+            <div class="container">
+                <div class="cart_inner">
+                    <div class="restaurant_name">
+                        <img src="./img/common_icons/rest_1.svg" alt="">
+                        <h1>Планета Суши</h1>
+                    </div>
+                    <div class="cart_dish">
+                        <div class="dish_img">
+                            <img src="./img/cards/cart_dish.png" alt="">
+                        </div>
+                    
+                        <div class="dish_description">
+                            <p>Пицца</p>
+                            <h2>4 сыра</h2>
+                        </div>
+                        <div class="dish_counter">
+                            <div class="dish_price">
+                                <span>320 руб</span>
+                                <span class="dish_weight">/25 см</span>
+                            </div>
+                        
+                            <div class="number">
+                        
+                                <span class="minus" @click="minusBasket(product.id)">-</span>
+                                <input type="text" value="1" />
+                                <span class="plus" @click="plusBasket(product.id)">+</span>
+                        
+                            </div>
+                            <div class="dish_cancel">
+                                <span class="cross">
+                                    <img src="./img/common_icons/cross.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_dish">
+                        <div class="dish_img">
+                            <img src="./img/cards/cart_dish.png" alt="">
+                        </div>
+                    
+                        <div class="dish_description">
+                            <p>Пицца</p>
+                            <h2>4 сыра</h2>
+                        </div>
+                        <div class="dish_counter">
+                            <div class="dish_price">
+                                <span>320 руб</span>
+                                <span class="dish_weight">/25 см</span>
+                            </div>
+                        
+                            <div class="number">
+                        
+                                <span class="minus" @click="minusBasket(product.id)">-</span>
+                                <input type="text" value="1" />
+                                <span class="plus" @click="plusBasket(product.id)">+</span>
+                        
+                            </div>
+                            <div class="dish_cancel">
+                                <span class="cross">
+                                    <img src="./img/common_icons/cross.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_box">
+                        <h2>Доставка</h2>
+                        <div class="price">
+                            <span>380 руб</span>
+                        </div>
+                    </div>
+                    <div class="notice_box">
+                        <div class="delivery">
+                            <img src="./img/common_icons/delivery.svg" alt="">
+                            <span>60 мин</span>
+                        </div>
+                        <div class="price error">
+                            <span>от 1200 руб</span>
+                        </div>
+                        <div class="error_box">
+                            <span class="error_icon">!</span>
+                            <span class="error_message">Дозакажите еще на <strong>100 руб</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_inner">
+                    <div class="restaurant_name">
+                        <img src="./img/common_icons/rest_1.svg" alt="">
+                        <h1>Планета Суши</h1>
+                    </div>
+                    <div class="cart_dish">
+                        <div class="dish_img">
+                            <img src="./img/cards/cart_dish.png" alt="">
+                        </div>
+                    
+                        <div class="dish_description">
+                            <p>Пицца</p>
+                            <h2>4 сыра</h2>
+                        </div>
+                        <div class="dish_counter">
+                            <div class="dish_price">
+                                <span>320 руб</span>
+                                <span class="dish_weight">/25 см</span>
+                            </div>
+                        
+                            <div class="number">
+                        
+                                <span class="minus" @click="minusBasket(product.id)">-</span>
+                                <input type="text" value="1" />
+                                <span class="plus" @click="plusBasket(product.id)">+</span>
+                        
+                            </div>
+                            <div class="dish_cancel">
+                                <span class="cross">
+                                    <img src="./img/common_icons/cross.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_dish">
+                        <div class="dish_img">
+                            <img src="./img/cards/cart_dish.png" alt="">
+                        </div>
+                    
+                        <div class="dish_description">
+                            <p>Пицца</p>
+                            <h2>4 сыра</h2>
+                        </div>
+                        <div class="dish_counter">
+                            <div class="dish_price">
+                                <span>320 руб</span>
+                                <span class="dish_weight">/25 см</span>
+                            </div>
+                        
+                            <div class="number">
+                        
+                                <span class="minus" @click="minusBasket(product.id)">-</span>
+                                <input type="text" value="1" />
+                                <span class="plus" @click="plusBasket(product.id)">+</span>
+                        
+                            </div>
+                            <div class="dish_cancel">
+                                <span class="cross">
+                                    <img src="./img/common_icons/cross.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_box">
+                        <h2>Доставка</h2>
+                        <div class="price">
+                            <span>380 руб</span>
+                        </div>
+                    </div>
+                    <div class="notice_box">
+                        <div class="delivery">
+                            <img src="./img/common_icons/delivery.svg" alt="">
+                            <span>60 мин</span>
+                        </div>
+                        <div class="price error">
+                            <span>от 1200 руб</span>
+                        </div>
+                        <div class="error_box">
+                            <span class="error_icon">!</span>
+                            <span class="error_message">Дозакажите еще на <strong>100 руб</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_totall">
+                    <div class="price_box">
+                        <p>Итого:</p>
+                        <span>4500 руб</span>
+                    </div>
+                    <button class="menu_item_btn">ПОЕСТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <nav class="nav_box">
+            <ul class="nav_inner">
+                <li class="footer_item">
+                    <img src="./img/common_icons/categ_icon.svg" alt="">
+                    <p>Категории</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/sales_icon.svg" alt="">
+                    <p>Акции</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/map_icon.svg" alt="">
+                    <p>Адрес</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/cab_icon.svg" alt="">
+                    <p>Кабинет</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/info_icon.svg" alt="">
+                    <p>Инфо</p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script src="./libs/select2/select2.min.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,2549 @@
+
+@keyframes appear 
+    0% 
+        display: none
+        opacity: 0
+    1% 
+        display: block
+        opacity: 0
+        transform: scaleY(0)
+    
+    100% 
+        opacity: 1
+        transform: scaleY(1)
+
+@keyframes appear_2
+    0% 
+        display: none
+        opacity: 0
+    1% 
+        display: block
+        opacity: 0
+        transform: translateX(-500px) rotate(-90deg)
+    
+    100% 
+        opacity: 1
+        transform: translateX(0) rotate(0)
+
+@keyframes appear_3 
+    0% 
+        display: none
+        opacity: 0
+    1% 
+        display: block
+        opacity: 0
+        transform: rotate(-360deg)
+    
+    100% 
+        opacity: 1
+        transform: rotate(0)
+
+
+@keyframes appear_4
+    0% 
+        display: none
+    1% 
+        display: block
+        opacity: 0
+        transform: scaleX(0)
+    
+    100% 
+        opacity: 1
+        transform: scaleX(1)
+
+@keyframes rotate
+    0% 
+        transform: rotateY(0)
+    1% 
+        transform: rotateY(1deg)
+    
+    100% 
+        transform: rotateY(360deg)
+
+//------monitor_box-----//
+//------monitor_box-----//
+//------monitor_box-----//
+.monitor_box
+    padding: 10px 0
+    & .select_box
+        margin-bottom: 15px
+        & .select_type
+            &.full
+                width: 100%
+    & .select
+        width: 100%
+        border-radius: 4px
+        padding: 5px
+        border: 0
+        color: #fff
+        appearance: none
+        background-image: url(../img/common_icons/arrow_top_white_small.svg)
+        background-position: center right 10px
+        background-repeat: no-repeat
+        background-size: auto
+        &.green
+            background-color: $green
+        &.orange
+            background-color: $orange
+    & .table
+        width: 100%
+        & .title
+            display: flex
+            padding: 0 5px
+            & h2
+                text-align: center
+                &:nth-child(1)
+                    width: 20%
+                &:nth-child(2)
+                    width: 60%
+                &:nth-child(3)
+                    width: 20%
+        & .table_body
+            & .item
+                border-radius: 4px
+                background: rgba(#000000, 0.04)
+                & .row
+                    width: 100%
+                    margin: 0
+                    padding: 5px
+                    display: flex
+                    & .select_type
+                        width: 100%
+                    & .select2-container--default .select2-selection--single .select2-selection__rendered
+                    & .select2-container--default 
+                        & .select2-selection--single 
+                            &:focus
+                                outline: none
+                            & .select2-selection__arrow b
+                                display: none
+                        & .select2-selection__rendered
+                            appearance: none
+                            background-image: url(../img/common_icons/arrow_small.svg)
+                            background-position: center right 15px
+                            background-repeat: no-repeat
+                            background-size: auto
+                            &:focus
+                                outline: none
+                    & span
+                        &.td
+                            text-align: center
+                            &:nth-child(1)
+                                width: 20%
+                            &:nth-child(2)
+                                width: 60%
+                            &:nth-child(3)
+                                text-align: end
+                                width: 20%
+
+
+//------WOK AND CATARING PAGES-----//
+//------WOK AND CATARING PAGES-----//
+//------WOK AND CATARING PAGES-----//
+.order_totall_box
+    background: #fff
+    position: sticky
+    bottom: 0
+    left: 0
+    right: 0
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1)
+    padding: 20px 15px
+    & .price
+        display: flex
+        justify-content: space-between
+        align-items: center
+        & span
+            &:nth-child(1)
+                color: $orange
+                font-weight: 700
+                font-size: 16px
+            &:nth-child(2)
+                color: $green
+                font-weight: 700
+                font-size: 16px
+.pop_up_cake_wrapper
+    position: relative
+    width: 100%
+    .pop_up_cake
+        width: 100%
+        position: relative
+        padding: 0 0 10px 0
+        .row_1
+            display: flex
+            flex-wrap: wrap
+            padding: 0 15px
+            & .option_box
+                width: 100%
+                margin-bottom: 10px
+                display: flex
+                justify-content: space-between
+                & .counter
+                    display: flex
+                    & .counter_btn
+                        cursor: pointer
+                        background: rgba(0, 0, 0, 0.04)
+                        color: $orange
+                        font-weight: 700
+                        border-radius: 4px
+                        width: 20px
+                        height: 20px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                    & input
+                        cursor: pointer
+                        text-align: center
+                        background: transparent
+                        width: 20px
+                        height: 20px
+                        margin: 0 5px
+                        border: 0
+                        padding: 0
+                        font-weight: 700
+        .row_2
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            margin: 20px
+            padding-top: 10px
+            & .row_2_text
+                margin-top: 10px
+                width: 100%
+            & .img
+                width: 100%
+                img 
+                    margin-right: 15px
+                    width: 100%
+                    height: auto
+                    object-fit: cover
+                    object-position: center
+            .description
+                width: 100%
+                margin-left: 10px
+                & .main
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-bottom: 5px
+                h3
+                    margin-bottom: 5px
+                    font-weight: 700
+                    font-size: 16px
+                .pop_up_cake_price
+                    color: $green
+                    span
+                        &:first-child
+                            font-weight: 700
+                            color: $green
+                        &:last-child
+                            color: rgba(black, 0.3)
+                p
+                    color: rgba(black, 0.4)
+        .slider_title
+            font-weight: bold
+            margin: 20px 0 10px 0
+            padding: 0 15px
+        .row_3
+            padding: 0 15px
+            margin: 10px 0 20px 0
+            .item
+                display: flex
+                flex-wrap: wrap
+                padding: 10px
+                margin: 10px 5px
+                width: 100%
+                height: auto
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                border-radius: 4px
+                .col
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    & .item_title
+                        display: flex
+                        align-items: center
+                        & img
+                            margin-right: 5px
+                            width: 40px
+                            height: auto
+                            object-fit: cover
+                            object-position: center
+                        & h2
+                            color: $orange
+                            font-size: 16px
+                    & .add_btn
+                        margin-bottom: 0
+                        background: rgba(0, 0, 0, 0.04)
+                        color: $orange
+                        font-weight: 700
+                        border-radius: 4px
+                        width: 20px
+                        height: 20px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        padding: 0
+                        border: 0
+                    button
+                        width: 120px
+                        height: 26px
+                        border: none
+                        outline: none
+                        cursor: pointer
+                        background: white
+                        border-radius: 30px
+                        color: rgba(black, 0.75)
+                        margin-bottom: 10px
+                        font-weight: 600
+                    p 
+                        font-style: normal
+                        color: rgba(white, 0.7)
+        .row_4
+            .row_4_left
+                textarea
+                    resize: none
+                    width: 100%
+                    height: 80px
+                    border-radius: 4px
+                    outline: none
+                    border: 1px solid rgba(0, 0, 0, 0.12)
+                    padding: 5px
+            .row_4_right
+                padding-left: 5px
+                display: flex
+                flex-wrap: wrap
+                align-items: flex-start
+                margin: 10px 0
+                .add_photo
+                    width: 100%
+                    opacity: 1
+                    position: relative
+                    margin-left: 30px
+                    font-weight: 700
+                    margin-bottom: 14px
+                    &:before
+                        position: absolute
+                        content: ''
+                        top: 50%
+                        left: 0
+                        width: 20px
+                        height: 16px
+                        background-image: url(../img/common_icons/file_input.svg)
+                        transform: translate(-29px, -50%)
+                        background-size: cover
+                        opacity: 1
+                .remove_photo 
+                    position: relative
+                    display: flex
+                    align-items: center
+                    margin-right: 10px
+                    p 
+                        opacity: 0.3
+                        margin-bottom: 5px
+                    button 
+                        height: 6px
+                        width: 6px
+                        background: none
+                        border: none
+                        background-image: url(../img/common_icons/cross.svg)
+                        opacity: 1
+                        margin-left: 3px
+                        cursor: pointer
+        .row_5
+            background: rgba(#F17E00, 0.12)
+            margin: -6px 20px 20px 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 4px
+            p 
+                font-size: 10px
+                color: rgba(black, 0.5)
+                text-align: center
+        .row_6
+            display: flex
+            justify-content: space-between
+            text-align: center
+            padding: 0 15px
+            & .price
+                color: $green
+                font-weight: 700
+                font-size: 14px
+            button
+                width: auto
+                padding: 0 10px
+                height: 32px
+                color: white
+                text-transform: uppercase
+                background: $orange
+                outline: none
+                border-radius: 30px
+                border: none
+                font-style: normal
+                font-weight: bold
+                font-size: 14px
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+
+.events_per_order
+    width: 100%
+    background: white
+    display: flex
+    flex-direction: column
+    padding-top: 15px
+    .row_1
+        display: flex
+        justify-content: baseline
+        align-items: center
+        flex-wrap: wrap
+        & p
+            &.row_text
+                margin: 10px 0
+                width: 100%
+        .select_wrap
+            margin: 10px 0
+            width: 100%
+            & .select_type
+                width: 100%
+            & .select2-container--default .select2-selection--single .select2-selection__rendered
+                line-height: 38px
+            & .select2-container--default 
+                & .select2-selection--single 
+                    height: 38px
+                    &:focus
+                        outline: none
+                    & .select2-selection__arrow b
+                        display: none
+                & .select2-selection__rendered
+                    appearance: none
+                    background-image: url(../img/common_icons/arrow_small.svg)
+                    background-position: center right 15px
+                    background-repeat: no-repeat
+                    background-size: auto
+                    height: 36px
+                    &:focus
+                        outline: none
+        .cataring_options
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            width: 100%
+            .budget
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                & p
+                    font-weight: 700
+                input 
+                    width: 20%
+                    height: 32px
+                    border: 1px solid rgba(0, 0, 0, 0.2)
+                    border-radius: 4px
+                    outline: none
+            & .number_box
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin: 10px 0
+                & p
+                    font-weight: 700
+                & .number
+                    display: flex
+                    & span
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        cursor: pointer
+                        width: 20px
+                        height: 20px
+                        border-radius: 4px
+                        background: rgba(0, 0, 0, 0.04)
+                        color: $orange
+                        font-weight: 700
+                        &.minus
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            color: $orange
+                            border-radius: 4px
+                            width: 24px
+                            height: 24px
+                        &.plus
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            color: $orange
+                            border-radius: 4px
+                            width: 24px
+                            height: 24px
+                    & input
+                        height: 24px
+                        width: 30px
+                        font-weight: 700
+                        text-align: center
+                        border: none
+                        background-color: transparent
+                        display: inline-block
+                        vertical-align: middle
+        .row_1_calendar
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 10px 0
+            width: 100%
+            a
+                display: block
+                margin-left: auto
+                text-decoration: underline
+                color: $orange
+                position: relative
+    .row_2
+        width: 100%
+        margin-bottom: 20px
+        textarea
+            width: 100%
+            height: 100%
+            max-height: 80px
+            max-width: 100%
+            resize: none
+            border-radius: 4px
+            outline: none
+            border: 1px solid rgba(0, 0, 0, 0.12)
+            padding: 5px
+    .row_4
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        input
+            height: 32px
+            width: 100%
+            margin-bottom: 10px
+            border-radius: 4px
+            outline: none
+            border: 1px solid rgba(0, 0, 0, 0.12)
+            padding: 5px 10px
+            &:last-child
+                margin-right: 0
+        .row_address
+            width: 100%
+            position: relative
+            input 
+                background-image: url(../img/common_icons/location.svg)
+                background-size: 15px
+                background-position: center left 5px
+                background-repeat: no-repeat
+                width: 100%
+                height: 32px
+                border-radius: 4px
+                outline: none
+                border: 1px solid rgba(0, 0, 0, 0.12)
+                padding: 5px 25px
+    .row_5
+        text-align: center
+        margin-top: 10px
+                        
+.create_wok
+    width: 100%
+    background: white
+    padding: 10px 0
+    border-radius: 4px
+    font-size: 12px
+    & h3
+        font-size: 16px
+        margin: 10px 0
+        color: $orange
+    .foundation
+        .logo
+            width: 100%
+            & img
+                width: 100%
+                height: 180px
+                object-fit: cover
+                object-position: center
+        .foundation_constructor
+            .osnova_buttons
+                margin-bottom: 5px
+                display: flex
+                flex-wrap: wrap
+                .osnova_btn
+                    background: rgba(0, 0, 0, 0.04)
+                    text-transform: none
+                    width: auto
+                    padding: 0 5px
+                    border-radius: 4px
+                    color: rgba(black, 0.75)
+                    font-size: 14px
+                    box-shadow: none
+                    transition: 0.3s
+                    margin-bottom: 12px
+                    margin-right: 5px
+                    &:hover
+                        background: $orange
+                        color: white
+            .nachinka_buttons
+                margin-bottom: 10px
+                .nachinka_btn
+                    background: rgba(0, 0, 0, 0.04)
+                    text-transform: none
+                    width: auto
+                    padding: 0 5px
+                    color: rgba(black, 0.75)
+                    border-radius: 4px
+                    font-size: 14px
+                    box-shadow: none
+                    transition: 0.3s
+                    &:hover
+                        background: $orange
+                        color: white
+                .active
+                    background: $orange
+                    color: white
+            & .inner_pick
+                & .add_box
+                    &:nth-child(even)
+                        & .items_box
+                            animation: appear_4 1s cubic-bezier(0.35, 0.23, 0, 1.88)
+                    & .add_title
+                        border-radius: 4px
+                        background-color: $main_bg
+                        background-image: url(../img/common_icons/arrow_bott_orange.svg)
+                        background-repeat: no-repeat
+                        background-position: center right 10px
+                        background-size: 20px
+                        margin-bottom: 10px
+                        & h2
+                            font-size: 16px
+                            margin: 0
+                            padding: 10px
+                        &.active
+                            background-image: url(../img/common_icons/arrow_top_orange.svg)
+                            background-size: 20px
+                    & .items_box
+                        border: 1px solid rgba(0, 0, 0, 0.12)
+                        padding: 10px
+                        border-radius: 4px
+                        margin: 10px 0
+                        display: none
+                        animation: appear .6s cubic-bezier(0.35, 0.23, 0, 1.88)
+                        &:nth-child(even)
+                        &.active
+                            display: block
+                        & .add_item
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            margin-bottom: 10px
+                            & p
+                                font-weight: 700
+                            & .number
+                                display: flex
+                                margin-left: auto
+                                margin-right: 10px
+                                & span
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    cursor: pointer
+                                    width: 20px
+                                    height: 20px
+                                    border-radius: 4px
+                                    background: rgba(0, 0, 0, 0.04)
+                                    color: $orange
+                                    font-weight: 700
+                                    &.minus
+                                        display: flex
+                                        justify-content: center
+                                        align-items: center
+                                        color: $orange
+                                        border-radius: 4px
+                                        width: 24px
+                                        height: 24px
+                                    &.plus
+                                        display: flex
+                                        justify-content: center
+                                        align-items: center
+                                        color: $orange
+                                        border-radius: 4px
+                                        width: 24px
+                                        height: 24px
+                                        margin-right: 7px
+                                & input
+                                    height: 24px
+                                    width: 30px
+                                    font-weight: 700
+                                    text-align: center
+                                    font-size: 14px
+                                    border: none
+                                    background-color: transparent
+                                    display: inline-block
+                                    vertical-align: middle
+                                & .dish_cancel
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    width: 24px
+                                    height: 24px
+                                    color: $orange
+                                    font-weight: 700
+                                    background: rgba(0, 0, 0, 0.04)
+            .pick_size
+                margin-top: 20px
+                button
+                    width: 50px
+                    height: 24px
+                    border: none
+                    outline: none
+                    cursor: pointer
+                    background: rgba(0, 0, 0, 0.04)
+                    color: rgba(black, 0.75)
+                    margin: 0 -2px
+                    transition: 0.3s
+                    font-size: 12px
+                    &:hover
+                        background: $orange
+                        color: white
+                .pick_size_btn
+                    font-weight: 700
+                    border-radius: 4px
+                    margin-right: 5px
+                .active
+                    background: $orange
+                    color: white
+
+    h4 
+        font-size: 16px
+        color: rgba(black, 0.75)       
+        margin-top: 15px   
+    .slider_wok
+        margin: 10px auto 15px auto
+        & .button
+            margin-left: auto
+        .slick-active
+            outline: none
+        .slick-dots
+            display: none
+            bottom: 0
+            li 
+                button
+                    position: relative
+                    &:before
+                        visibility: hidden
+                    &:after
+                        content: ''
+                        position: absolute
+                        height: 10px
+                        width: 10px
+                        background: white
+                        border-radius: 50%
+                        border: 1px solid $orange
+        .item_wok
+            width: auto
+            box-shadow: 1px 3px 7px 4px rgba(0, 0, 0, 0.08)
+            background: #ffffff
+            border-radius: 4px
+            overflow: hidden
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            position: relative
+            margin: 15px 10px
+            .item_img_wok
+                width: 100%
+                position: relative
+                & p 
+                    display: block
+                    color: #ffffff
+                img
+                    height: auto
+                    width: 100%
+                    object-fit: cover
+                    object-position: center
+            .item_price_wok
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                flex-wrap: wrap
+                width: 100%
+                height: auto
+                background: #ffffff
+                border-radius: 0 0 4px 4px
+                padding: 10px 15px
+                .title
+                    width: 50%
+                    h3 
+                        color: black
+                        margin-bottom: 0px
+                        font-size: 16px
+                        font-weight: bold
+                .town
+                    width: 50%
+                    p
+                        text-align: right
+                        color: rgba(black, 0.5)
+                        font-weight: 300
+                        font-size: 14px
+                .wok_price
+                    width: fit-content
+                    color: $green
+                    font-weight: 700
+                    p 
+                        font-size: 14px
+                    span
+                        font-size: 12px
+                        color: rgba(0, 0, 0, 0.4)
+//------HEALTH_PAGE-----//
+//------HEALTH_PAGE-----//
+//------HEALTH_PAGE-----//
+
+.bootstrap_calendar
+    & .datepicker-days
+        width: 100%
+        margin: 20px auto
+        & .table-condensed
+            width: 100%
+    & .datepicker-days
+        & tbody
+            & td
+                cursor: pointer
+                font-weight: 700
+                text-align: center
+                border: 5px solid #ffffff
+                border-radius: 15px
+                width: 56px
+                height: 40px
+                transition: .2s all linear
+                background: rgba(#000000, .04)
+                &.day
+                    color: #000000
+                    &.active
+                        background: $orange
+                        color: #fff
+                &.old.day
+                    color: rgba(#000000, .3)
+                    cursor: not-allowed
+                &.new.day
+                    color: rgba(#000000, .3)
+                    cursor: not-allowed
+
+.calendar_box
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 80vh
+    padding: 15px 0
+    border-radius: 4px
+    margin: 15px auto
+    & .select_wrap
+        margin: 10px 0
+        width: 100%
+        & .select_type
+            width: 100%
+        & .select2-container--default .select2-selection--single .select2-selection__rendered
+            line-height: 38px
+        & .select2-container--default 
+            & .select2-selection--single 
+                height: 38px
+                &:focus
+                    outline: none
+                & .select2-selection__arrow b
+                    display: none
+            & .select2-selection__rendered
+                appearance: none
+                background-image: url(../img/common_icons/arrow_small.svg)
+                background-position: center right 15px
+                background-repeat: no-repeat
+                background-size: auto
+                height: 36px
+                &:focus
+                    outline: none
+    & .option_box
+        width: 100%
+        margin-bottom: 10px
+        display: flex
+        justify-content: space-between
+        & h2
+            font-size: 16px
+        & .counter
+            display: flex
+            & .counter_btn
+                cursor: pointer
+                background: rgba(0, 0, 0, 0.04)
+                color: $orange
+                font-weight: 700
+                border-radius: 4px
+                width: 20px
+                height: 20px
+                display: flex
+                justify-content: center
+                align-items: center
+            & input
+                cursor: pointer
+                text-align: center
+                background: transparent
+                width: 20px
+                height: 20px
+                margin: 0 5px
+                border: 0
+                padding: 0
+                font-weight: 700
+    & h1
+        font-size: 16px
+        margin: 5px 0
+    & .price_box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: auto
+        & span
+            font-size: 16px
+            color: $green
+            font-weight: 700
+    & .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all
+        display: none
+    & .ui-datepicker-calendar
+        width: 100%
+        margin: 0 auto
+        & thead
+            display: none
+    & .ui-datepicker 
+        & .ui-datepicker-calendar 
+            & .ui-state-highlight 
+                & a
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: #ffffff
+                    height: 100%
+                    background: $orange
+                    border-radius: 6px
+                    text-decoration: none
+                    transition: .2s all linear
+                    
+    & .ui-datepicker-calendar 
+        & td
+            cursor: pointer
+            background: rgba(#000000, .04)
+            font-weight: 700
+            text-align: center
+            border: 3px solid #ffffff
+            border-radius: 6px
+            color: #000000
+            width: 56px
+            height: 40px
+            & a
+                color: #000000
+                &:hover
+                    text-decoration: none!important
+
+.health_box
+    position: relative
+    width: 100%
+    & .healthy_inner
+        width: 100%
+        background: white
+        padding: 20px 0
+        .row_1
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 10px
+            padding: 0 15px
+            .logo
+                margin-right: 10px
+                & img
+                    width: 60px
+                    height: auto
+            .title
+                font-size: 20px
+                color: $orange
+                display: flex
+                align-items: center
+                margin-right: auto
+                margin-left: 10px
+            .stars_container
+                display: flex
+                .star
+                    width: 17px
+                    height: 16px
+                    background-image: url(../img/cards/star_empty.svg)
+                .active
+                    background-image: url(../img/cards/star_full.svg)
+        .row_2
+            display: flex
+            margin-left: 20px
+            align-items: center
+            flex-wrap: wrap
+            h3 
+                color: $orange
+                font-size: 20px
+                margin-right: 8px
+        .row_3
+            margin: 5px 20px 25px 20px
+            p 
+                font-size: 12px
+        .row_4
+            margin: 10px 15px
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            & h1
+                width: 100%
+                margin: 5px 0
+                font-size: 16px
+            & .week_slider
+                width: 100%
+                height: auto
+                display: flex
+                align-items: center
+                &.slick-dotted.slick-slider
+                    margin-bottom: 5px
+                & .slick-prev, .slick-next
+                    position: relative
+                    top: 0
+                    transform: translate(0, 0)
+                    background: rgba(0, 0, 0, 0.04)
+                    width: 40px
+                    height: 27px
+                    border-radius: 4px
+                & .slick-prev
+                    left: 0
+                    margin-right: 5px
+                    &::before
+                        width: 40px
+                        height: 27px
+                        display: block
+                        font-family: none
+                        content: ""
+                        background-image: url(../img/common_icons/arrow-p.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                & .slick-next
+                    right: 0
+                    margin-left: 5px
+                    &::before
+                        width: 40px
+                        height: 27px
+                        display: block
+                        font-family: none
+                        content: ""
+                        background-image: url(../img/common_icons/arrow-n.svg)
+                        background-repeat: no-repeat
+                        background-position: center
+                & .slick-dots
+                    bottom: 30px
+                    left: 60px
+                    width: fit-content
+                    & li
+                        width: 10px
+                        & .dot
+                            color: #000000
+                        &.slick-active
+                            & .dot
+                                color: $orange
+                                text-decoration: none
+            p
+                width: 100%
+                color: rgba(0, 0, 0, 0.6)
+                margin-right: 5px
+                margin-bottom: 5px
+            .days_buttons
+                display: flex
+                justify-content: center
+                width: auto
+                .day_button
+                    border: none
+                    outline: none
+                    width: 30px
+                    height: 27px
+                    margin-right: 5px
+                    border-radius: 4px
+                    background: rgba(0, 0, 0, 0.04)
+                    color: #000000
+                    font-size: 14px
+                    transition: all 0.4s
+                    &:hover
+                        background: $orange
+                        color: white
+                .active
+                    background: orange
+                    color: white
+        .row_5
+            height: auto
+            width: 100%
+            margin: 0 auto 10px auto
+            padding: 0 10px   
+            .pop_up_healthy_slider_wrapper
+                margin: 0 auto
+                .item
+                    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                    margin: 10px
+                    height: 180px 
+                    border-radius: 8px
+                    display: flex
+                    background: white
+                    .item_img
+                        width: 160px
+                        height: 180px
+                        & img
+                            height: 100%
+                            width: 100%
+                            border-radius: 8px 0 0 8px
+                            object-fit: cover
+                            object-position: center
+                    .item_price
+                        h4 
+                            font-size: 16px
+                            text-align: center
+                        .links
+                            margin-left: 15px
+                            margin-top: 10px
+                            a 
+                                text-decoration: underline
+                                font-size: 12px
+                                font-weight: 400
+                                color: $orange
+                .slick-next
+                    background-image: url(../img/common_icons/white_arrow_right.svg)
+                    background-repeat: no-repeat
+                    background-position: center
+                    transform: translate(20px, -10px)
+                    cursor: pointer
+                    height: 0
+                    width: 0
+                    &:before
+                        display: none
+                .slick-prev
+                    background-image: url(../img/common_icons/white_arrow_left.svg)
+                    background-repeat: no-repeat
+                    background-position: center
+                    transform: translate(-20px, -10px)
+                    cursor: pointer
+                    height: 0
+                    width: 0
+                    &:before
+                        display: none
+        .row_6
+            p 
+                font-size: 12px
+                text-align: center
+                margin-top: 8px
+                margin-bottom: 15px
+                a
+                    font-size: 12px
+                    text-decoration: underline
+                    color: $orange
+        .row_7
+            display: flex
+            justify-content: space-between
+            padding: 0 20px
+            flex-wrap: wrap
+            .left
+                display: flex
+                align-items: center
+                .left_1
+                    p
+                        color: $green
+                        font-size: 16px
+                        font-weight: bold
+                        & span
+                            color: rgba(0, 0, 0, 0.6)
+                .left_2
+                    display: flex
+                    align-items: center
+                    p 
+                        font-size: 12px
+                        color: rgba(black, 0.75)
+                        display: flex
+                        align-items: center
+                        button 
+                            height: 14px
+                            width: 14px
+                            border-radius: 50%
+                            background: $orange
+                            margin: 0 5px
+                            
+                            border: none
+                            outline: none
+                            cursor: pointer
+                            &:first-child
+                                background-image: url(../img/pop_up_healthy/minus.svg)
+                                background-repeat: no-repeat
+                                background-position: center
+                            &:last-child
+                                background-image: url(../img/pop_up_healthy/plus.svg)
+                                background-repeat: no-repeat
+                                background-position: center
+            .right
+                display: flex
+                align-items: center
+                button
+                    width: auto
+                    padding: 0 10px
+                    margin-left: 10px   
+
+//------BONUS_PAGE-----//
+//------BONUS_PAGE-----//
+//------BONUS_PAGE-----//
+.bonus_box
+    & .referal_programm
+        width: 100%
+        padding: 10px
+        margin: 20px 0
+        & .referal_bonus
+            width: 100%
+            text-align: center
+            & p
+                font-size: 16px
+            & h2
+                color: $orange
+                font-size: 20px
+        & .withdrawal_request
+            margin: 15px 0
+            width: 100%
+            display: flex
+            align-items: center
+            flex-direction: column
+            & p
+                margin-right: 10px
+                text-align: right
+            & .menu_item_btn
+                width: 200px
+                &.green
+                    margin-top: 10px
+                    background: $green
+        & .statistics_box
+            background: #ffffff
+            border-radius: 4px
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+            padding: 15px 0
+            margin-bottom: 15px
+            & h1
+                color: $orange
+                font-size: 16px
+                margin: 0
+                margin-bottom: 10px
+                padding: 0 10px
+            & .statistic_row
+                display: flex
+                justify-content: space-between
+                padding: 5px 10px
+                &:nth-child(even)
+                    background: $main_bg
+        & .referal_types
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+            border-radius: 4px
+            background: #ffffff
+            padding: 20px 15px
+            & h1
+                color: $orange
+                font-size: 16px
+                margin: 0
+                margin-bottom: 10
+            & .type_box
+                margin-bottom: 15px
+                &:last-child
+                    margin-bottom: 0
+            & a
+                color: $green
+                text-decoration: underline
+            & .type_share
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                margin-top: 15px
+                & .banners_box
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    width: 100%
+                    &.lk
+                        & .banner_item
+                            width: 33%
+                            &:last-child
+                                margin-right: auto
+                    & .banner_item
+                        width: 22%
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        margin-bottom: 20px
+                        & h4
+                            font-size: 12px
+                            font-weight: 400
+                            margin-bottom: 10px
+                        & img
+                            object-fit: cover
+                            object-position: center
+                            width: 100%
+                            max-width: 100px
+                            height: auto
+                            margin-bottom: 10px
+                        & .menu_item_btn
+                            font-size: 12px
+                            margin: 0 auto
+                            width: 120px
+                & .copy_box
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    width: 100%
+                    & .copy_info
+                        display: flex
+                        align-items: flex-end
+                        padding-bottom: 5px
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+                        text-align: center
+                        &.promo
+                            min-width: 200px
+                            text-align: left
+                        & span
+                            text-decoration: underline
+                            color: #50CE1B
+                    & .copy
+                        background: #ffffff
+                        border-radius: 50%
+                        width: 40px
+                        height: 40px
+                        border: 0
+                        margin-left: 10px
+                        transition: all .3s linear
+                        & img
+                            width: 30px
+                            height: auto
+                        & .copy_white
+                            display: none
+                        & .copy_orange
+                            display: inline-block
+                        &:hover
+                            & .copy_white
+                                background: $orange
+                                border-radius: 50%
+                                width: 40px
+                                height: 40px
+                                object-fit: scale-down
+                                display: inline-block
+                            & .copy_orange
+                                display: none
+                & .share_socials
+                    padding: 0
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    align-items: center
+                    width: 100%
+                    margin: 0 auto
+                    text-align: center
+                    & span
+                        width: 100%
+                        font-weight: 700
+                        margin-bottom: 10px
+                        color: rgba(0, 0, 0, 0.6)
+                        border: none
+                        text-decoration: none
+                    & img
+                        cursor: pointer
+                        margin-right: 5px
+                        width: 35px
+                        height: auto
+        & .referal_history
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+            border-radius: 4px
+            background: #ffffff
+            margin-bottom: 15px
+            & .title
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 10px
+                & h1
+                    margin: 0
+                    font-size: 16px
+                    color: $orange
+                & .toggle_btn
+                    width: 32px
+                    height: 16px
+                    display: block
+                    border: none
+                    padding: 0
+                    border-radius: 10px
+                    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+                    background-color: $orange
+                    background-image: url(../img/common_icons/arrow_bott_white.svg)
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: auto
+                    &.active
+                        background-image: url(../img/common_icons/arrow_top_white.svg)
+            & .history_box
+                display: none
+                animation: appear_4 0.5s cubic-bezier(0, 0, 1, 0.32)
+                &.active
+                    display: block
+                & .revenue_box
+                    background: #ffffff
+                    padding: 5px 10px
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+                    &:nth-child(even)
+                        background: $main_bg
+                    & .referal_item
+                        background: none
+                    & .revenue_amount
+                        color: $green
+                        font-weight: 700
+                & .referal_item
+                    background: #ffffff
+                    padding: 15px 10px
+                    &:nth-child(even)
+                        background: $main_bg
+                    & span
+                        color: #rgba(0, 0, 0, 0.4)
+                        margin-top: 5px
+//------ORDERS_HISTORY-----//
+//------ORDERS_HISTORY-----//
+//------ORDERS_HISTORY-----//
+
+.orders_history
+    margin: 30px 0
+    & .order_card
+        & .title
+            padding: 0 15px
+            color: $orange
+            display: flex
+            justify-content: space-between
+            border-bottom: rgba(0, 0, 0, 0.12)
+            & .print_btn
+                background: transparent
+                padding: 0
+                border: 0
+            & h1
+                margin: 0
+                font-size: 16px
+        & .content_box
+            & .menu_item_btn
+                display: block
+                margin: 10px auto
+            & .main_info
+                padding: 10px 15px
+                & .info_item
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom: 10px
+                    font-size: 12px
+                    &:last-child
+                        margin-bottom: 0
+                    & .item_key
+                        width: 40%
+                    & .item_value
+                        width: 60%
+                        font-weight: 700
+            & .order_description
+                & .order_box
+                    display: flex
+                    flex-direction: column
+                    background: rgba(0, 0, 0, 0.04)
+                    padding: 10px 15px
+                    &:nth-child(even)
+                        background: #ffffff     
+                    &.new
+                        display: flex
+                        flex-direction: row
+                        align-items: flex-end
+                        justify-content: space-between
+                        & .order_title
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+                    & .number
+                        display: flex
+                        & span
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            cursor: pointer
+                            width: 20px
+                            height: 20px
+                            border-radius: 4px
+                            background: rgba(0, 0, 0, 0.04)
+                            color: $orange
+                            font-weight: 700
+                            &.minus
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                color: $orange
+                                border-radius: 4px
+                                width: 24px
+                                height: 24px
+                            &.plus
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                color: $orange
+                                border-radius: 4px
+                                width: 24px
+                                height: 24px
+                            &.cancel
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                color: $orange
+                                border-radius: 4px
+                                margin-left: 10px
+                                width: 24px
+                                height: 24px
+                        & input
+                            height: 24px
+                            width: 30px
+                            font-weight: 700
+                            text-align: center
+                            border: none
+                            background-color: transparent
+                            display: inline-block
+                            vertical-align: middle
+                    & span
+                        &.category
+                            color: rgba(0, 0, 0, 0.4)
+                            font-size: 12px
+                            margin-top: 5px
+                    & .order_title
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        & h2
+                            margin: 0
+                            font-size: 14px
+                        & .weight
+                            margin-right: auto
+                            margin-left: 10px
+                            color: rgba(0, 0, 0, 0.4)
+                        & p
+                            color: $green
+                & .totall
+                    padding: 10px 15px
+                    & .price
+                        display: flex
+                        justify-content: space-between
+                        & span
+                            &:first-child
+                                color: $orange
+                                font-weight: 700
+                                font-size: 16px
+                            &:last-child
+                                font-size: 16px
+                                font-weight: 700
+                                color: $green
+    & .orders_box
+        padding: 15px 10px
+        margin-bottom: 10px
+        border-radius: 4px
+        &.completed
+            background: rgba(80, 206, 27, 0.12)
+        &.sending
+            background: rgba(255, 230, 0, 0.12)
+        &.canceled
+            background: rgba(255, 0, 0, 0.12)
+        & .order_item
+            & .order_title
+                display: flex
+                justify-content: space-between
+                & .title_inner
+                    & h1
+                        font-size: 16px
+                        margin: 0
+                        color: $orange
+                    & .date
+                        color: rgba(0, 0, 0, 0.4)
+                        font-size: 12px
+                & .orders_num
+                    display: flex
+                    align-items: flex-start
+                    & span
+                        font-size: 16px
+                        font-weight: 700
+                        margin-right: 5px
+                    & img
+                        width: 27px
+                        height: auto
+            & .price_box
+                display: flex
+                justify-content: space-between
+                margin-top: 15px
+                & .price
+                    color: $green
+                    font-weight: 700
+                & .status
+                    color: rgba(#000000, 0.4)
+
+
+//------preview-page-----//
+//------preview-page-----//
+//------preview-page-----//
+.preview_box
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    & img
+        width: 160px
+        height: auto
+//------countries_list-page------//
+//------countries_list-page-----//
+//------countries_list-page-----//
+.countries_list
+    height: 100%
+    overflow-y: auto
+    & .countries_box
+        display: flex
+        flex-direction: column
+        & .country
+            list-style-type: none
+            position: relative
+            font-size: 16px
+            font-weight: 700
+            margin-bottom: 15px
+            padding: 10px 0
+            padding-left: 35px
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+            &:before
+                content: ''
+                display: inline-block
+                position: absolute
+                top: 12px
+                left: 0
+                border-radius: 4px
+                width: 28px
+                height: 18px
+                background: #000000
+
+//------map_page------//
+//------map_page------//
+//------map_page------//
+.select2-container--open .select2-dropdown--below
+    border-top: 1px solid #aaa
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+    background: $orange
+.select2-results__option
+    &:nth-child(even)
+        background: rgba(#000000, .04)
+
+.select2-container--default .select2-results__option .select2-results__option
+    &:nth-child(even)
+        background: rgba(#000000, .6)
+.select2-container--default .select2-selection--multiple .select2-selection__choice
+    margin-top: 13px
+.select2-container--open .select2-dropdown
+    top: 20px
+.map_box
+    height: 100%
+    width: 100%
+    position: relative
+    & #main_map
+        height: 100vh
+    & .map_settings
+        & .select2-container--default .select2-selection--single .select2-selection__rendered
+            line-height: 38px
+        & .select2-container--default 
+            & .select2-selection--single 
+                height: 38px
+                &:focus
+                    outline: none
+                & .select2-selection__arrow b
+                    display: none
+            & .select2-selection__rendered
+                appearance: none
+                background-image: url(../img/common_icons/location.svg)
+                background-position: center right 15px
+                background-repeat: no-repeat
+                background-size: auto
+                height: 36px
+                &:focus
+                    outline: none
+        .map_address_form
+            position: absolute
+            padding: 20px 0
+            top: 0
+            right: 10px
+            left: 10px
+            height: 100vh
+            width: auto
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            & .city_input
+                width: 100%
+                height: 36px
+                padding: 5px
+                border: none
+                appearance: none
+                background-image: url(../img/common_icons/location.svg)
+                background-position: center right 15px
+                background-repeat: no-repeat
+                background-size: auto
+                &::placeholder
+                    opacity: .7
+            & .submit_box
+                & h1
+                    font-size: 16px
+                    margin: 10px 0
+                    text-align: center
+                & span
+                    margin: 5px 0
+                    text-align: center
+            & .menu_item_btn
+                &.change_address
+                    width: 190px
+                    height: 32px
+                    color: $orange
+                    background: #ffffff
+                &.submit_address
+                    width: 100px
+                    height: 32px
+//------SUCCESS Form------//
+//------SUCCESS Form------//
+//------SUCCESS Form------//
+.success_box
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    height: 85vh
+    & p
+        margin-bottom: 5px
+    & span
+        &.order_num
+            color: $orange
+            font-weight: 700
+            font-size: 16px
+    & .time
+        margin: 20px 0
+    & .menu_item_btn
+        margin-top: 30px
+        width: 80px
+
+//------FOR_RESTAURANTS------//
+//------FOR_RESTAURANTS------//
+//------FOR_RESTAURANTS------//
+.section
+    &.s-choose_us
+        background-color: $main_bg
+        & .container
+            & h1
+                width: 100%
+                text-align: center
+                margin: 10px auto
+                font-size: 20px
+                font-weight: 700
+            & .choose_box
+                display: flex
+                justify-content: space-between
+                align-items: center
+                flex-wrap: wrap
+                margin-bottom: 10px
+                & .choose_card
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    margin-bottom: 15px
+                    & img
+                        width: 70px
+                        height: auto
+                        margin-right: 10px
+                    & p
+                        font-size: 16px
+    &.s-tab
+        background: #ffffff
+        & .container
+            & .tab_box
+                display: flex
+                justify-content: space-between
+                align-items: center
+                flex-wrap: wrap
+                & .statistic
+                    width: 100%
+                    margin: 0 auto
+                    & .inner
+                        width: 100%
+                        margin-bottom: 30px
+                        text-align: center
+                        & h1
+                            font-size: 20px
+                            &.orange
+                                color: $orange
+                            &.green
+                                color: $green
+                & img
+                    width: 100%
+                    max-width: 450px
+                    margin: 0 auto
+                    height: auto
+    &.s-mission
+        background-image: url(../img/for_restaurants/pinaapple_bg.png)
+        background-size: cover
+        background-repeat: no-repeat
+        & .container
+            & h1
+                color: #ffffff
+                text-align: center
+                font-size: 20px
+                font-weight: 700
+                margin-bottom: 40px
+            & .point
+                color: #ffffff
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 30px
+                &:last-child
+                    margin-bottom: 0
+                & .point_bg
+                    position: relative
+                    margin-right: 12px
+                    & span
+                        font-size: 20px
+                        position: absolute
+                        top: 50%
+                        left: 35%
+                        transform: translate(-50%, -50%)
+                & p
+                    font-size: 14px
+                    width: fit-content
+//------Sign Forms------//
+//------Sign Forms------//
+//------Sign Forms------//
+.forms
+    padding: 15px 0
+    & .form
+        &.sign-in
+            height: 70vh
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            & .menu_item_btn
+                display: block
+                margin: 10px auto
+    & .file_box
+        margin-bottom: 10px
+    & .file_input
+        width: .1px
+        height: .1px
+        opacity: 0
+        z-index: -1
+        overflow: hidden
+        position: absolute
+        & + label
+            display: flex
+            align-items: center
+            color: #000000
+            font-weight: 700
+            width: auto
+            border-radius: 4px
+            padding: 5px
+            font-size: 14px
+            cursor: pointer
+            & img
+                width: 25px
+                margin-right: 10px
+    &.for_restaurant
+        height: auto
+        padding-bottom: 20px
+    & .form_title
+        margin: 10px 0
+        & h2
+            color: $orange
+            font-size: 16px
+            margin: 10px 0
+        & h1
+            font-size: 20px
+            margin: 10px 0
+    & .redirect_box
+        text-align: center
+        margin: 10px 0
+        & .menu_item_btn
+            &.auth
+                border: 1px solid $orange
+                background: #ffffff
+                color: $orange
+                &:hover
+                    color: #ffffff
+                    background-color: $orange
+            &.grey
+                color: $orange
+                margin-right: 10px
+                background-color: #F17E0035
+                &:hover
+                    color: #ffffff
+                    background-color: $orange
+        & .sign_link
+            text-decoration: underline
+            font-weight: 700
+            color: $orange
+    & .form
+        & .menu_item_btn
+            display: block
+            margin: auto auto 0 auto
+        & .info_agreement
+            margin-bottom: 20px
+            text-align: center
+            & .info_link
+                color: $green
+                text-decoration: underline
+        & .city_input
+            width: 100%
+            margin-bottom: 20px
+        & .select2-container
+            margin-bottom: 20px
+            width: 100%!important
+        & .select2-container--default .select2-selection--single
+            & .select2-selection__placeholder
+                color: rgba(#000000, .7)
+                font-size: 16px
+            & .select2-selection__rendered
+                border-bottom: 0
+                line-height: 38px
+                padding: 0 5px
+        & .select2-container--default 
+            & .select2-selection--single 
+                height: auto
+                border-radius: 0
+                border: none
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+                &:focus
+                    outline: none
+                & .select2-selection__arrow b
+                    display: none
+            & .select2-selection__rendered
+                appearance: none
+                border: none
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+                background-image: url(../img/common_icons/arrow_bott.svg)
+                background-position: center right 15px
+                background-repeat: no-repeat
+                background-size: auto
+                height: 36px
+                &:focus
+                    outline: none
+        & .app_input
+            width: 100%
+            background: none
+            height: auto
+            margin-bottom: 20px
+            border: 0
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+            padding: 5px
+            font-size: 16px
+            &::placeholder
+                color: rgba(#000000, .7)
+        & input[type="checkbox"]
+            display: none
+        & .checkbox_label
+            cursor: pointer
+            position: relative
+            top: 2px
+            height: 14px
+            width: 14px
+            background-color: transparent
+            border: 1px solid rgba(0, 0, 0, 0.12)
+            display: inline-block
+            border-radius: 3px
+        & input[type="checkbox"]
+            &:checked + label
+                background-image: url(../img/common_icons/checked_attr.svg)
+                background-repeat: no-repeat
+                background-position: center
+//------Cards_page------//
+//------Cards_page------//
+//------Cards_page------//
+.food_cards
+    width: 100%
+    padding-top: 15px
+    & .restaurants_box
+        background: #ffffff
+        border-radius: 4px
+        background: #ffffff
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.67)
+        display: flex
+        flex-direction: column
+        padding: 20px 15px 0 15px
+        margin-bottom: 10px
+        .title_box
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .restaurant_logo
+                width: 15%
+                height: auto
+                object-fit: cover
+                object-position: center
+                margin-right: 10px
+                & img
+                    width: 100%
+                    height: auto
+                    object-fit: cover
+                    object-position: center
+            .title
+                margin-right: auto
+                h1
+                    font-size: 20px
+        .description_box
+            .tags
+                display: flex
+                align-items: center
+                flex-wrap: wrap
+                & .tags_item
+                    margin: 0 5px 5px 0
+                    width: fit-content
+                    & p
+                        border-radius: 4px
+                        padding: 2px 5px
+                        background: $orange
+                        color: #ffffff
+            & .description_text
+                margin: 10px 0
+        & .dish_slider
+            width: 100%
+            & .dish_item
+                display: flex
+                flex-direction: column
+                margin: 10px 5px
+                border-radius: 4px
+                background: #ffffff
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+                width: auto
+                height: auto
+                & img
+                    height: 120px
+                    width: 100%
+                    object-fit: cover
+                    object-position: center
+                & .dish_description
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 10px 5px
+                    height: 60px
+                    & .name
+                        font-weight: 700
+                        font-size: 16px
+                        width: 70%
+                        word-break: break-word
+                    & .price
+                        font-weight: 700
+                        color: $green
+                        text-align: end
+    & .goods_box
+        width: 100%
+        max-width: 600px
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    & .item 
+        display: flex
+        flex-direction: column
+        width: 49%
+        margin-bottom: 2%
+        background: white
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08)
+        border-radius: 4px
+        & .main_description
+            display: flex
+            align-items: center
+            justify-content: space-between
+            background-color: $main_bg
+            & img
+                object-fit: cover
+                object-position: center
+                height: 250px
+                width: 100%
+            & .image_box
+                width: 100%
+                position: relative
+                & .dish_overlay
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+                    flex-wrap: wrap
+                    position: absolute
+                    width: 100%
+                    top: 0
+                    & .dish_sale
+                        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12)
+                        background: #ffffff
+                        color: $orange
+                        padding: 5px
+                        border-radius: 2px
+                        & h2
+                            font-size: 12px
+                            margin: 0
+                    & .dish_info
+                        display: flex
+                        color: #ffffff
+                        font-weight: 700
+                        font-size: 12px
+                        & .post_time
+                            height: 25px
+                            width: auto
+                            background: rgba(0, 0, 0, 0.6)
+                            padding: 0 5px
+                            margin-right: 5px
+                            border-radius: 2px
+                            display: flex
+                            align-items: center
+                            & img
+                                width: 15px
+                                height: auto
+                                object-fit: none
+                                margin-right: 5px
+                        & .info_icons
+                            height: 25px
+                            width: auto
+                            background: rgba(0, 0, 0, 0.6)
+                            border-radius: 2px
+                            padding: 0 5px
+                            display: flex
+                            align-items: center
+                            & img
+                                width: 100%
+                                height: 20px
+                                object-fit: none
+                                margin-right: 5px
+        & .select_box
+            width: 100%
+            margin-bottom: 10px
+            padding: 0 15px
+            & h3
+                color: $orange
+        & .select2-container
+            margin-bottom: 10px
+            width: 100%!important
+        & .select2-container--default .select2-selection--single
+            & .select2-selection__placeholder
+                color: rgba(#000000, .7)
+                font-size: 16px
+            & .select2-selection__rendered
+                border-bottom: 0
+                line-height: 38px
+                padding: 0 5px
+        & .select2-container--default 
+            & .select2-selection--single 
+                height: 40px
+                border-radius: 0
+                border: none
+                background: $main_bg
+                &:focus
+                    outline: none
+                & .select2-selection__arrow b
+                    display: none
+            & .select2-selection__rendered
+                appearance: none
+                border: none
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+                background-image: url(../img/common_icons/arrow_small.svg)
+                background-position: center right 15px
+                background-repeat: no-repeat
+                background-size: auto
+                height: 36px
+                &:focus
+                    outline: none
+        .title
+            display: flex
+            justify-content: space-between
+            margin: 10px 0
+            padding: 0 16px
+            h4 
+                color: rgba(#000000, .8)
+            & span
+                text-align: end
+                color: rgba(#000000, .4)
+            a 
+                color: $green
+                text-decoration: none
+                border-bottom: 1px solid $green
+                transition: 0.4s
+                &:hover
+                    border-bottom: 1px solid transparent
+        .link_row
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            margin-right: auto
+            margin-left: 15px
+            a
+                margin-bottom: 10px
+                color: $orange
+                text-decoration: none
+                border-bottom: 1px solid $orange
+                transition: 0.4s
+                &:hover
+                    border-bottom: 1px solid transparent
+            p 
+                color: rgba(black, 0.6)
+                position: relative
+                margin-left: 20px
+                &:before 
+                    position: absolute
+                    content: ''
+                    width: 15px
+                    height: 12px
+                    background-image: url(../img/restrunt_card/main/van.svg)
+                    left: 0
+                    top: 50%
+                    transform: translate(-125%, -50%)
+        & .pizza_weight
+            font-size: 12px
+            font-weight: bold
+            padding-left: 15px
+            margin: 8px 0
+        & .text_row
+            padding: 0 15px 10px 15px
+            & p
+                color: rgba(#000000, .6)
+        .prise_row
+            display: flex
+            flex-wrap: wrap
+            padding: 0 15px
+            justify-content: space-between
+            align-items: center
+            margin-top: auto
+            font-size: 12px
+            & p
+                width: 66%
+                text-align: left
+                margin-bottom: 10px
+                font-size: 12px
+                & strong
+                    font-size: 12px
+                    color: $green
+                    & .old_price
+                        text-decoration: line-through
+            & .menu_item_btn
+                margin: 0 0 10px auto
+                &.icons_group
+                    text-align: right
+    & .card_item
+        position: relative
+        margin-bottom: 15px
+        width: 100%
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+        background: #ffffff
+        height: auto
+        min-height: 48px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &:hover
+            & p
+                color: $orange
+        & img
+            border-radius: 4px
+            height: 100%
+            width: 100px
+            object-fit: cover
+            object-position: center
+        & p
+            margin-right: auto
+            margin-left: 15px
+            font-size: 16px
+            color: rgba(0, 0, 0, 0.4)
+            font-weight: 700
+            transition: all .2s linear
+//------Cart_page------//
+//------Cart_page------//
+//------Cart_page------//
+.main_cart_box
+    padding: 10px 0
+    & .sales_dish_box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    & .cart_dish
+        &.sales
+            width: 48%
+            margin-bottom: 2%
+            box-shadow: -1px 1px 5px 4px rgba(0, 0, 0, 0.1)
+            border-radius: 4px
+            padding-bottom: 10px
+            background: #ffffff
+            & .dish_img
+                width: 100%
+                height: auto
+                margin-left: 0
+                & img
+                    width: 100%
+                    height: 100px
+                    border-radius: 4px
+                    object-position: center
+                    object-fit: cover
+            & .dish_description
+                width: 100%
+                padding: 0 10px
+                margin: 10px 0
+                font-weight: 700
+            & .sale_order
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 0 10px
+                & .time
+                    color: rgba(0, 0, 0, 0.4)
+    & .cart_inner
+        box-shadow: -1px 1px 5px 4px rgba(0, 0, 0, 0.1)
+        border-radius: 4px
+        width: 100%
+        padding-bottom: 10px
+        background: #ffffff
+        margin-bottom: 20px
+        & .notice_box
+            display: flex
+            flex-wrap: wrap
+            margin-top: 10px
+            width: 100%
+            padding: 10px 10px 0 10px 
+            background: #ffffff
+            & .delivery
+                background: $green
+                color: #ffffff
+                border-radius: 4px
+                width: fit-content
+                margin-right: 5px
+                padding: 2px 5px
+            & .price
+                background: $green
+                padding: 2px 5px
+                color: #ffffff
+                border-radius: 4px
+                width: fit-content
+                margin-right: 5px
+                &.error
+                    background: $orange
+            & .error_box
+                display: flex
+                margin-top: 10px
+                width: 100%
+                & .error_icon
+                    display: flex
+                    width: 22px
+                    aling-items: center
+                    justify-content: center
+                    border: 1px solid $orange
+                    border-radius: 50%
+                    color: $orange
+                    font-size: 14px
+                    font-weight: 700
+                    margin-right: 10px
+                & .error_message
+                    & strong
+                        color: $orange
+        & .post_box
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 15px 10px
+            background: $main_bg
+            & h2
+                font-size: 20px
+            & .price
+                color: $green
+                font-size: 16px
+                font-weight: 700
+        & .restaurant_name
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 10px 0
+            & img
+                width: 60px
+                height: auto
+                object-fit: cover
+                object-position: center
+                margin-right: 10px
+            & h1
+                font-size: 20px
+        & .cart_dish
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+            padding-top: 10px
+            &:nth-child(odd)
+                background: #ffffff
+            &:nth-child(even)
+                background: $main_bg
+            & .dish_description
+                margin: 0 auto auto 15px
+                width: 40%
+                & h2
+                    font-size: 20px
+                    margin: 7px 0
+                & p
+                    font-size: 14px
+                    color: rgba(0, 0, 0, 0.4)
+                & span
+                    font-size: 16px
+            & .dish_img
+                width: 100px
+                height: auto
+                margin-left: 10px
+                & img
+                    width: 100px
+                    height: 100px
+                    border-radius: 4px
+                    object-position: center
+                    object-fit: cover
+            & .dish_counter
+                display: flex
+                width: 100%
+                padding: 10px
+                justify-content: space-between
+                align-items: center
+                margin-top: 10px
+                & .number
+                    display: flex
+                    margin-left: auto
+                    margin-right: 10px
+                    & span
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        cursor: pointer
+                        width: 20px
+                        height: 20px
+                        border-radius: 4px
+                        background: rgba(0, 0, 0, 0.04)
+                        color: $orange
+                        font-weight: 700
+                        &.minus
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            color: $orange
+                            border-radius: 4px
+                            width: 24px
+                            height: 24px
+                        &.plus
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            color: $orange
+                            border-radius: 4px
+                            width: 24px
+                            height: 24px
+                            margin-right: 7px
+                    & input
+                        height: 24px
+                        width: 30px
+                        font-weight: 700
+                        text-align: center
+                        font-size: 14px
+                        border: none
+                        background-color: transparent
+                        display: inline-block
+                        vertical-align: middle
+                & .dish_price
+                    color: $green
+                    width: fit-content
+                    margin-right: 5px
+                    border-radius: 4px
+                    text-align: center
+                    font-weight: 700
+                    font-size: 14px
+                    & .dish_weight
+                        color: rgba(0, 0, 0, 0.4)
+                & .dish_cancel
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 24px
+                    height: 24px
+                    color: $orange
+                    font-weight: 700
+                    background: rgba(0, 0, 0, 0.04)
+        & .restaurant_description
+            padding: 10px 15px
+            & .review
+                margin: 8px 0
+                &.main
+                    display: flex
+                    background: #ffffff
+                    & span
+                        color: #ffffff
+                        font-weight: 700
+                        font-size: 14px
+                    & .delivery_box
+                        background: $green
+                        padding: 3px
+                        margin-right: 5px
+                    & .minimal_box
+                        background: $green
+                        padding: 3px
+                & span
+                    font-size: 12px
+                    & .cart__feature__link
+                        margin-left: 10px
+                        color: $orange
+                        font-weight: 700
+    & .cart_totall
+            display: flex
+            justify-content: space-between
+            font-size: 14px
+            margin: 15px 0
+            color: #000000
+            font-weight: 700
+            padding: 10px 15px
+            & .price_box
+                display: flex
+                align-items: center
+                & p
+                    color: rgba(0, 0, 0, 0.5)
+                    font-size: 16px
+                    margin-right: 10px
+            & span
+                font-size: 16px
+                color: $green
+                font-weight: 700
+//------INFO-pages------//
+//------INFO-pages------//
+//------INFO-pages------//
+.info_box
+    margin-top: 15px
+    & .link
+        cursor: pointer
+        border-radius: 4px
+        width: 100%
+        padding: 15px 10px
+        color: $orange
+        font-size: 16px
+        margin-bottom: 10px
+        border: 1px solid $orange
+        background-image: url(../img/common_icons/arrow_right.svg)
+        background-position: center right 15px
+        background-repeat: no-repeat
+        background-size: 10%
+        transition: all .2s ease-in-out
+        &:hover
+            color: #ffffff
+            background-color: $orange
+            background-image: url(../img/common_icons/arrow_right_white.svg)
+
+.info_policy_box
+    margin-top: 30px
+    & h1
+        font-size: 16px
+        color: $orange
+        margin: 15px 0
+    & p
+        margin-bottom: 10px

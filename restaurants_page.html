@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    
+    <title>HP APP</title>
+</head>
+<body>
+    <div class="options_box">
+        <div class="options_title">
+            <h1>Критерии</h1>
+        </div>
+        <div class="options_inner">
+            <div class="meals">
+                <h3>Блюда</h3>
+                <div class="check_group">
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Пицца
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Суши
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" name="choose">
+                        Роллы
+                        <span> </span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="min_amount">
+                <h3>Минимальная сумма заказа</h3>
+                <div class="range_value">
+                    <p id="display_range_value_2">200</p>
+                </div>
+                <div class="change_range">
+                    <input type="range" id="min_amount_range_2" name="min_amount_range" min="0" max="1000" step="1" value="300">
+                </div>
+            </div>
+            <div class="ordering_criteria">
+                <h3>Критерии заказа</h3>
+                <div class="check_group">
+                    <label class="check_label">
+                        <input type="checkbox" value="1" name="choose">
+                        Оплата картой онлайн
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="2" name="choose">
+                        Оплата наличными
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="3" name="choose">
+                        Оплата картой курьеру
+                        <span> </span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" value="4" name="choose">
+                        Оплата бонусными рублями
+                        <span> </span>
+                    </label>
+    
+                </div>
+    
+            </div>
+            <div class="close_options"></div>
+        </div>
+    </div>
+
+    <div class="background">
+
+        <div class="container">
+            <div class="food_cards">
+                <div class="restaurants_box">
+        
+                    <div class="title_box">
+                        <div class="restaurant_logo">
+                            <img src="./img/common_icons/rest_1.svg" alt="">
+                        </div>
+                        <div class="title">
+                            <h1>Планета суши</h1>
+                        </div>
+                        <div class="stars">
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_1" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_2" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_3" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_4" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_5" name="choose">
+                                    <span> </span>
+                                </label>
+                            </div>
+                    </div>
+                    <div class="description_box">
+                        <div class="tags">
+                            <div class="tags_item">
+                                <p>С 11:30 до 23:00</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Заказ от 500₽</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Доставка 200₽</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Бесплатная доставка от 1500₽</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Доставим за 60 мин</p>
+                            </div>
+                        </div>
+                        <div class="description_text">
+                            <p>Служба доставки еды "ХОЧУ-ПОЕСТЬ.РФ" в городе Москва - это свыше 1000 блюд и 
+                                напитков, которые привезут вам домой или в офис без, в городе Москва - это 
+                                свыше 1000 блюд и напитков, которые привезут вам домой или в офис.</p>
+                        </div>
+                    </div>
+                    <div class="dish_slider">
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_1.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">Woki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_2.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">Woki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_1.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">Woki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_2.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">Woki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurants_box">
+        
+                    <div class="title_box">
+                        <div class="restaurant_logo">
+                            <img src="./img/common_icons/rest_1.svg" alt="">
+                        </div>
+                        <div class="title">
+                            <h1>Планета суши</h1>
+                        </div>
+                        <div class="stars">
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_1" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_2" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_3" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_4" name="choose">
+                                    <span> </span>
+                                </label>
+                                <label class="check_label">
+                                    <input type="checkbox" value="star_5" name="choose">
+                                    <span> </span>
+                                </label>
+                            </div>
+        
+                    </div>
+                    <div class="description_box">
+                        <div class="tags">
+                            <div class="tags_item">
+                                <p>С 11:30 до 23:00</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Заказ от 500₽</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Доставка 200₽</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Бесплатная доставка от 1500₽</p>
+                            </div>
+                            <div class="tags_item">
+                                <p>Доставим за 60 мин</p>
+                            </div>
+                        </div>
+                        <div class="description_text">
+                            <p>Служба доставки еды "ХОЧУ-ПОЕСТЬ.РФ" в городе Москва - это свыше 1000 блюд и 
+                                напитков, которые привезут вам домой или в офис без, в городе Москва - это 
+                                свыше 1000 блюд и напитков, которые привезут вам домой или в офис.</p>
+                        </div>
+                    </div>
+                    <div class="dish_slider">
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_1.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">WokiWokiWokiWokiWoki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_2.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">WokiWokiWoki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_1.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">WokiWokiWoki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                        <div class="dish_item">
+                            <img src="./img/cards/dish_2.png" alt="">
+                            <div class="dish_description">
+                                <span class="name">WokiWokiWokiWokiWoki</span>
+                                <span class="price">320 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cart_box">
+        <img src="./img/common_icons/cart_icon.svg" alt="">
+        <span class="cart_num">12</span>
+    </div>
+
+    <footer class="footer">
+        <nav class="nav_box">
+            <ul class="nav_inner">
+                <li class="footer_item">
+                    <img src="./img/common_icons/categ_icon.svg" alt="">
+                    <p>Категории</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/sales_icon.svg" alt="">
+                    <p>Акции</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/map_icon.svg" alt="">
+                    <p>Адрес</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/cab_icon.svg" alt="">
+                    <p>Кабинет</p>
+                </li>
+                <li class="footer_item">
+                    <img src="./img/common_icons/info_icon.svg" alt="">
+                    <p>Инфо</p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script src="./libs/select2/select2.min.js"></script>
+<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+    
+</body>
+</html>
